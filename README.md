@@ -19,6 +19,18 @@ for Armbian Focal (tested on LibreComputer LaFrite 1GB)
 
 this is modified/fixed script to run SquishBox on other than Raspbeery Pi devices running Armbian "Focal"
 
+To run:
+
+cd "to source directory"
+
+change permission to run
+
+chmod +x squishbox
+
+and run
+
+./squishbox
+
 
 Optonal if no sound in speakers after install :
 
