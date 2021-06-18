@@ -44,3 +44,7 @@ sudo echo defaults.ctl.card 0 >> /etc/asound.conf
 sudo rm /etc/asound.conf
 
 and run install script again but Answer "yes" to questions if only this is necessary
+
+TIP:
+In Armbian Focal based on ubuntu Focal you don't need to answer yes to quaestion about to build fluidsynth from source /updated version is already in repository...
+
