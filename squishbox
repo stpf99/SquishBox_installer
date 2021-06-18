@@ -174,12 +174,12 @@ if [[ $update == "yes" ]]; then
     apt_pkg_install "git"
     apt_pkg_install "python3-pip"
     apt_pkg_install "python3-rtmidi"
-    apt_pkg_install "libfluidsynth1"
+    apt_pkg_install "libfluidsynth2"
     apt_pkg_install "fluid-soundfont-gm"
     pip_install "oyaml"
     pip_install "mido"
-    pip_install "RPi.GPIO"
-    pip_install "RPLCD"
+#    pip_install "RPi.GPIO"
+#    pip_install "RPLCD"
 
     echo "Installing/Updating FluidPatcher version $NEW_FP_VER ..."
     rm -rf fluidpatcher
@@ -380,8 +380,8 @@ if [[ $soundfonts == "yes" ]]; then
     apt_pkg_install "tap-plugins"
 	apt_pkg_install "wah-plugins"
     wget -nv --show-progress geekfunklabs.com/squishbox_soundfonts.zip
-    unzip -na squishbox_sfpack.zip -d $installdir/SquishBox
-    rm squishbox_sfpack.zip
+    unzip -na squishbox_soundfonts.zip -d $installdir/SquishBox
+    rm squishbox_soundfonts.zip
 fi
 
 success "Tasks complete!"
