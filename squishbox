@@ -384,6 +384,9 @@ if [[ $soundfonts == "yes" ]]; then
     rm squishbox_soundfonts.zip
 fi
 
+sudo echo defaults.pcm.card 0 >> /etc/asound.conf 
+sudo echo defaults.ctl.card 0 >> /etc/asound.conf 
+
 success "Tasks complete!"
 
 if $ASK_TO_REBOOT; then
