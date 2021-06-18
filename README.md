@@ -23,9 +23,11 @@ this is modified/fixed script to run SquishBox on other than Raspbeery Pi device
 Optonal if no sound in speakers after install :
 
 for default soundcard change "0" to your main soundcard at lines 387 and 388 in "squishbox" install script...
->>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
-sudo echo defaults.pcm.card 0 >> /etc/asound.conf 
-sudo echo defaults.ctl.card 0 >> /etc/asound.conf 
+
+
+sudo echo defaults.pcm.card 0 >> /etc/asound.conf
+
+sudo echo defaults.ctl.card 0 >> /etc/asound.conf
 
 sudo rm /etc/asound.conf
 
