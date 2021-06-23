@@ -36,12 +36,13 @@ Optonal if no sound in speakers after install :
 
 for default soundcard change "0" to your main soundcard at lines 387 and 388 in "squishbox" install script...
 
+sudo rm /etc/asound.conf
 
 sudo echo defaults.pcm.card 0 >> /etc/asound.conf
 
 sudo echo defaults.ctl.card 0 >> /etc/asound.conf
 
-sudo rm /etc/asound.conf
+
 
 and run install script again but Answer "yes" to questions if only this is necessary
 
